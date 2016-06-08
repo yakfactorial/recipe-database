@@ -1,0 +1,31 @@
+<h1>{{name}}</h1>
+
+<p>Serves {{servings}}</p>
+<p>Cook Time: {{cookTime}}</p>
+
+<h3>Ingredients:</h3>
+<ul>
+  {{#each ingredients}}
+    <li>{{this}}</li>
+  {{/each}}
+</ul>
+<hr>
+<ul>
+  {{#each directions}}
+    <li>{{this}}</li>
+  {{/each}}
+</ul>
+
+<h4>SOURCE:</h4>
+{{source}}
+
+tags: [],
+home: "/",
+
+<p>Hello world</p>
+
+<img src="{{images}}" alt="" />
+
+
+<a href="{{back}}">Back</a>
+<a href="{{next}}">Next</a>

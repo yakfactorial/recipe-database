@@ -1,6 +1,3 @@
-var express = require('express');
-var router = express.Router();
-
 var broccoliCheddar = {
   name: "Broccoli Cheddar Soup",
   servings: "4 to 6",
@@ -30,32 +27,3 @@ var broccoliCheddar = {
   ],
   source: "http://smittenkitchen.com/blog/2015/09/broccoli-cheddar-soup/",
 };
-
-/* GET home page. */
-router.get("/", function(req, res, next) {
-  res.render("index", {
-    title: "Recipe Database",
-    next: "/recipe",
-  })
-})
-
-// res.send to convert to JSON
-// getRecipes("source") either db or file
-// switch(source){case: "file" return getRecipeFromFile(); case: "database" return getRecipeFromDatabase();}
-
-router.get("/recipe", function(request, response){
-  response.render("recipe", {
-    name: "Broccoli Cheddar Soup",
-    servings: broccoliCheddar.servings,
-    cookTime: broccoliCheddar.cookTime,
-    ingredients: broccoliCheddar.ingredients,
-    directions: broccoliCheddar.directions,
-    source: broccoliCheddar.source,
-    tags: [],
-    home: "/",
-    // next: "/recipe",
-  })
-});
-// gazpacho, mint juleps, enchiladas, crock pot stew, strawberry basil balsamic salad, southwest salad, strawberry rhubarb pie, old fashioneds, indian foods (cabbage dish and potato dish), kidney bean and chard pie, cabbage and portobello tacos, sangria with ginger and cardamom, hollandaise sauce
-
-module.exports = router;
