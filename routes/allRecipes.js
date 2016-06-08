@@ -27,3 +27,44 @@ var broccoliCheddar = {
   ],
   source: "http://smittenkitchen.com/blog/2015/09/broccoli-cheddar-soup/",
 };
+
+var gazpacho = {
+  name: "Gazpacho",
+  servings: "",
+  cookTime: "",
+  ingredients: [
+
+  ],
+  directions: [
+
+  ],
+  tags: [
+    "summer",
+    "lunch",
+    "dinner",
+    "soup",
+  ],
+  source: "",
+};
+
+var hollandaise = {
+  name: "Hollandaise Sauce",
+  servings: "6",
+  cookTime: "10 minutes",
+  ingredients: [
+    "3 egg yolks",
+    "1/2 lemon, juiced",
+    "1 tsp. cold water",
+    "1/2 c. butter",
+    "salt and pepper to taste",
+  ],
+  directions: [
+    "In a small bowl, whisk together egg yolks, lemon juice, cold water, salt and pepper. Melt butter in a saucepan over low heat. Do not let the butter boil, or the sauce will separate and become chunky. Gradually whisk yolk mixture into butter. Continue whisking over low heat for 8 minutes, or until sauce is thickened. Serve immediately. If the sauce is separating, add a splash of very cold water and whisk quickly until smooth."
+  ],
+  tags: [
+    "breakfast",
+    "sauce",
+    "hollandaise",
+  ],
+  source: "http://allrecipes.com/recipe/35995/classic-hollandaise-sauce/",
+};

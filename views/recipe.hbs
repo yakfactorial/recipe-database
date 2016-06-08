@@ -6,26 +6,26 @@
 <h3>Ingredients:</h3>
 <ul>
   {{#each ingredients}}
-    <li>{{this}}</li>
+    <li>
+      <input type="checkbox">{{this}}
+    </li>
   {{/each}}
 </ul>
 <hr>
+{{#each directions}}
+  <p>{{this}}</p>
+{{/each}}
+
+<h4>SOURCE:</h4>
+<a href="{{source}}">{{source}}</a>
+
+<h4>Tags:</h4>
 <ul>
-  {{#each directions}}
-    <li>{{this}}</li>
+  {{#each tags}}
+    <li>"{{this}}"</li>
   {{/each}}
 </ul>
 
-<h4>SOURCE:</h4>
-{{source}}
-
-tags: [],
-home: "/",
-
-<p>Hello world</p>
-
 <img src="{{images}}" alt="" />
 
-
-<a href="{{back}}">Back</a>
-<a href="{{next}}">Next</a>
+<a href="{{home}}">Home</a>
