@@ -1,4 +1,5 @@
-var broccoliCheddar = {
+var allRecipes = {
+  broccoliCheddar : {
   name: "Broccoli Cheddar Soup",
   servings: "4 to 6",
   cookTime: "45 minutes, including prep",
@@ -29,85 +30,88 @@ var broccoliCheddar = {
     "soup",
   ],
   source: "http://smittenkitchen.com/blog/2015/09/broccoli-cheddar-soup/",
-};
+  },
 
-var sangria = {
-  name: "",
-  servings: "",
-  cookTime: "",
-  ingredients: [
-    "1.5 oz/40g peeled ginger root (about one 4 1/2-inch knob)",
-    "2 tablespoons water",
-    "1/3 cup sugar",
-    "20 green cardamom pods",
-    "2 1/4 cups red wine",
-    "1 cup orange juice (or 3 to 4 oranges, juiced)",
-    "1/2 cup plus 1 tablespoon sweet vermouth (such as Carpano Antica)",
-  ],
-  directions: [
-    "To Make the Ginger-Cardamom Syrup: If using a juicer, juice ginger (yields will vary), then measure out 2 tablespoons fresh ginger juice and mix with water. Proceed to step 2. If using an immersion blender, chop ginger roughly, then add to blender jar with water and blend thoroughly. Strain through a fine-mesh strainer; mixture should yield 4 tablespoons ginger liquid.",
-    "In a small saucepan, combine ginger liquid and sugar. Warm over medium heat, stirring until sugar dissolves, removing from heat as soon as sugar dissolves; do not let boil. Add cardamom pods, cover, and let cool. Refrigerate at least 2 and up to 10 hours.",
-    "To Make the Sangria: Add wine, orange juice, and sweet vermouth to a pitcher. Strain Ginger-Cardamom Syrup into pitcher and stir to mix. Serve immediately or refrigerate up to 2 hours.",
-  ],
-  tags: [
-    "summer",
-    "sangria",
-    "alcohol",
-  ],
-  source: "http://www.seriouseats.com/recipes/2016/06/red-wine-sangria-ginger-cardamom-recipe.html",
-};
+  sangria: {
+    name: "",
+    servings: "",
+    cookTime: "",
+    ingredients: [
+      "1.5 oz/40g peeled ginger root (about one 4 1/2-inch knob)",
+      "2 tablespoons water",
+      "1/3 cup sugar",
+      "20 green cardamom pods",
+      "2 1/4 cups red wine",
+      "1 cup orange juice (or 3 to 4 oranges, juiced)",
+      "1/2 cup plus 1 tablespoon sweet vermouth (such as Carpano Antica)",
+    ],
+    directions: [
+      "To Make the Ginger-Cardamom Syrup: If using a juicer, juice ginger (yields will vary), then measure out 2 tablespoons fresh ginger juice and mix with water. Proceed to step 2. If using an immersion blender, chop ginger roughly, then add to blender jar with water and blend thoroughly. Strain through a fine-mesh strainer; mixture should yield 4 tablespoons ginger liquid.",
+      "In a small saucepan, combine ginger liquid and sugar. Warm over medium heat, stirring until sugar dissolves, removing from heat as soon as sugar dissolves; do not let boil. Add cardamom pods, cover, and let cool. Refrigerate at least 2 and up to 10 hours.",
+      "To Make the Sangria: Add wine, orange juice, and sweet vermouth to a pitcher. Strain Ginger-Cardamom Syrup into pitcher and stir to mix. Serve immediately or refrigerate up to 2 hours.",
+    ],
+    tags: [
+      "summer",
+      "sangria",
+      "alcohol",
+    ],
+    source: "http://www.seriouseats.com/recipes/2016/06/red-wine-sangria-ginger-cardamom-recipe.html",
+  },
 
-var hollandaise = {
-  name: "Hollandaise Sauce",
-  servings: "6",
-  cookTime: "10 minutes",
-  ingredients: [
-    "3 egg yolks",
-    "1/2 lemon, juiced",
-    "1 tsp. cold water",
-    "1/2 c. butter",
-    "salt and pepper to taste",
-  ],
-  directions: [
-    "In a small bowl, whisk together egg yolks, lemon juice, cold water, salt and pepper. Melt butter in a saucepan over low heat. Do not let the butter boil, or the sauce will separate and become chunky. Gradually whisk yolk mixture into butter. Continue whisking over low heat for 8 minutes, or until sauce is thickened. Serve immediately. If the sauce is separating, add a splash of very cold water and whisk quickly until smooth."
-  ],
-  tags: [
-    "breakfast",
-    "sauce",
-    "hollandaise",
-  ],
-  source: "http://allrecipes.com/recipe/35995/classic-hollandaise-sauce/",
-};
+  hollandaise: {
+    name: "Hollandaise Sauce",
+    servings: "6",
+    cookTime: "10 minutes",
+    ingredients: [
+      "3 egg yolks",
+      "1/2 lemon, juiced",
+      "1 tsp. cold water",
+      "1/2 c. butter",
+      "salt and pepper to taste",
+    ],
+    directions: [
+      "In a small bowl, whisk together egg yolks, lemon juice, cold water, salt and pepper. Melt butter in a saucepan over low heat. Do not let the butter boil, or the sauce will separate and become chunky. Gradually whisk yolk mixture into butter. Continue whisking over low heat for 8 minutes, or until sauce is thickened. Serve immediately. If the sauce is separating, add a splash of very cold water and whisk quickly until smooth."
+    ],
+    tags: [
+      "breakfast",
+      "sauce",
+      "hollandaise",
+    ],
+    source: "http://allrecipes.com/recipe/35995/classic-hollandaise-sauce/",
+    },
 
-var biscuits = {
-  name: "Cacio e Pepe Biscuits",
-  servings: "12",
-  cookTime: "30 minutes",
-  ingredients: [
-    "2 3/4 cups all-purpose flour",
-    "1/2 tsp. kosher salt",
-    "1 tbsp. baking powder",
-    "1 cup (2 sticks) unsalted butter, very cold",
-    "1	cup grated Pecorino Romano cheese",
-    "2 tbsp. freshly ground black pepper",
-    "1 cup milk",
-  ],
-  directions: [
-    "Preheat your oven to 425° F. Line two baking sheets with parchment paper.",
-    "In a large bowl, whisk together the flour, salt, and baking powder. Cut in the cold butter using a fork or pastry cutter. The mixture should have pea-sized lumps.",
-    " Stir in the grated cheese and black pepper with a fork and pour in the milk. Stir until the dough is a shaggy, wet mess. Once it mostly comes together, use your hands to fold in the dry bits that haven't been incorporated. You want to be very gentle and use your hands as little as possible. Focus on folding the dough over onto itself until it mostly comes together.",
-    "Turn the dough out onto a lightly floured surface and pat it into a 1 1/2-inch-thick disc. Using a sharp biscuit cutter (or a round cookie cutter), cut out circles.",
-    " Place the dough circles onto your prepared baking sheets. Sprinkle a generous amount of black pepper and grated cheese over the top of each biscuit. Bake for 10 to 12 minutes, or until just golden brown on the edges. Remove from the oven and let cool slightly.",
-  ],
-  tags: [
-    "cacio e pepe",
-    "biscuits",
-    "breakfast",
-    "dinner",
-    "winter",
-    "fall",
-  ],
-  source: "http://food52.com/recipes/41421-cacio-e-pepe-biscuits",
-};
+  biscuits: {
+    name: "Cacio e Pepe Biscuits",
+    servings: "12",
+    cookTime: "30 minutes",
+    ingredients: [
+      "2 3/4 cups all-purpose flour",
+      "1/2 tsp. kosher salt",
+      "1 tbsp. baking powder",
+      "1 cup (2 sticks) unsalted butter, very cold",
+      "1	cup grated Pecorino Romano cheese",
+      "2 tbsp. freshly ground black pepper",
+      "1 cup milk",
+    ],
+    directions: [
+      "Preheat your oven to 425° F. Line two baking sheets with parchment paper.",
+      "In a large bowl, whisk together the flour, salt, and baking powder. Cut in the cold butter using a fork or pastry cutter. The mixture should have pea-sized lumps.",
+      " Stir in the grated cheese and black pepper with a fork and pour in the milk. Stir until the dough is a shaggy, wet mess. Once it mostly comes together, use your hands to fold in the dry bits that haven't been incorporated. You want to be very gentle and use your hands as little as possible. Focus on folding the dough over onto itself until it mostly comes together.",
+      "Turn the dough out onto a lightly floured surface and pat it into a 1 1/2-inch-thick disc. Using a sharp biscuit cutter (or a round cookie cutter), cut out circles.",
+      " Place the dough circles onto your prepared baking sheets. Sprinkle a generous amount of black pepper and grated cheese over the top of each biscuit. Bake for 10 to 12 minutes, or until just golden brown on the edges. Remove from the oven and let cool slightly.",
+    ],
+    tags: [
+      "cacio e pepe",
+      "biscuits",
+      "breakfast",
+      "dinner",
+      "winter",
+      "fall",
+    ],
+    source: "http://food52.com/recipes/41421-cacio-e-pepe-biscuits",
+  }
 
-module.exports = './allRecipes.js';
+  // "http://www.epicurious.com/recipes/food/views/indian-spiced-cauliflower-and-potatoes-109118",
+}
+
+module.exports = allRecipes;
