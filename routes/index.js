@@ -11,6 +11,8 @@ router.get('/', (req, res, next) => {
   })
 })
 
+router.get('/api/name', api.name);
+
 // res.send to convert to JSON
 // getRecipes('source') either db or file
 // switch(source){case: 'file' return getRecipeFromFile(); case: 'database' return getRecipeFromDatabase();}
@@ -67,15 +69,15 @@ router.get('/recipe/cacio-e-pepe-biscuits', (request, response) => {
   })
 });
 
-// router.get('/recipe/cacio-e-pepe-biscuits', (request, response) => {
+// router.get('/recipe/indian-cauliflower', (request, response) => {
 //   response.render('recipe', {
-//     name: recipes.biscuits.name,
-//     servings: recipes.biscuits.servings,
-//     cookTime: recipes.biscuits.cookTime,
-//     ingredients: recipes.biscuits.ingredients,
-//     directions: recipes.biscuits.directions,
-//     source: recipes.biscuits.source,
-//     tags: recipes.biscuits.tags,
+//     name: recipes.indianCauliflower.name,
+//     servings: recipes.indianCauliflower.servings,
+//     cookTime: recipes.indianCauliflower.cookTime,
+//     ingredients: recipes.indianCauliflower.ingredients,
+//     directions: recipes.indianCauliflower.directions,
+//     source: recipes.indianCauliflower.source,
+//     tags: recipes.indianCauliflower.tags,
 //     home: '/',
 //   })
 // });

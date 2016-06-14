@@ -109,9 +109,56 @@ var allRecipes = {
       "fall",
     ],
     source: "http://food52.com/recipes/41421-cacio-e-pepe-biscuits",
+  },
+  indianCauliflower: {
+    name: "Indian Spiced Cauliflower and Potatoes",
+    servings: "4",
+    cookTime: "50 minutes",
+    ingredients: [
+      "1 head cauliflower, cut into 3/4-inch-wide florets",
+      "1 1/4 lb potatoes, peeled and cut into 1/2-inch cubes",
+      "5 tbsp. olive oil"
+      "1/2 tsp. cumin seeds",
+      "3/4 tsp. salt",
+      "1 medium onion, finely chopped",
+      "2 garlic cloves, finely chopped",
+      "2 tsp. minced fresh jalapeño, including seeds",
+      "2 tsp. minced peeled fresh ginger",
+      "1 tsp. ground cumin",
+      "1/2 tsp. ground coriander",
+      "1/4 tsp. turmeric",
+      "1/4 teaspoon cayenne",
+      "1/2 cup water",
+      "Accompaniment: lemon wedges",
+    ],
+    directions: [
+      "Put oven rack in upper third of oven and place a shallow baking pan on rack. Preheat oven to 475°F.",
+      "Toss cauliflower and potatoes together in a bowl with 3 tablespoons oil, cumin seeds, and1/4 teaspoon salt. Spread in hot baking pan and roast, stirring occasionally, until cauliflower is tender and browned in spots and potatoes are just tender, about 20 minutes.",
+      "While vegetables are roasting, cook onion, garlic, jalapeño, and ginger in remaining 2 tablespoons oil in a 12-inch heavy skillet over moderate heat, stirring frequently, until very soft and beginning to turn golden, 8 to 10 minutes.",
+      "Add ground cumin, coriander, turmeric, cayenne, and remaining 1/2 teaspoon salt and cook, stirring constantly, 2 minutes. Stir in water, scraping up any brown bits from bottom of skillet, then stir in roasted vegetables. Cook, covered, stirring occasionally, 5 minutes."
+    ],
+    source: " http://www.epicurious.com/recipes/food/views/indian-spiced-cauliflower-and-potatoes-109118",
+    tags: [
+      "indian",
+      "cauliflower",
+      "potatoes",
+      "spicy",
+      "fall",
+      "winter",
+    ],
+    home: '/',
   }
-
-  // "http://www.epicurious.com/recipes/food/views/indian-spiced-cauliflower-and-potatoes-109118",
 }
+
+// emtpyRecipeObject: {
+//   name: "",
+//   servings: "",
+//   cookTime: "",
+//   ingredients: [],
+//   directions: [],
+//   source: "",
+//   tags: [],
+//   home: '/',
+// }
 
 module.exports = allRecipes;
