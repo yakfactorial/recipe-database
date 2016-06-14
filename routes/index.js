@@ -2,16 +2,26 @@ var express = require('express');
 var router = express.Router();
 var fs = require('fs');
 var recipes = require('./allRecipes.js');
+var api = require('./api.js');
 
 /* GET home page. */
-router.get('/', (req, res, next) => {
-  res.render('index', {
+router.get('/', (request, response, next) => {
+  response.render('index', {
     title: "Recipe Database",
-    next: '/recipe',
+    next: 'recipe/broccoli-cheddar',
   })
 })
 
-router.get('/api/name', api.name);
+router.get('/', function(error, request, response, next){
+  res.json(api(request, response))
+})
+
+router.get('/recipe', (request, response, next) => {
+  response.render('recipe', {
+    title: "Recipe Database",
+    next: 'recipe',
+  })
+})
 
 // res.send to convert to JSON
 // getRecipes('source') either db or file

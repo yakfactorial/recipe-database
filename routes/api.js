@@ -1,7 +1,5 @@
-require file('allRecipes.js')
+var allRecipes = require('./allRecipes.js');
 
-exports.name = (req, res) => {
-  res.json({
-    allRecipes: allRecipes,
-  });
+module.exports = function(req, res) {
+  return {allRecipes: allRecipes};
 };

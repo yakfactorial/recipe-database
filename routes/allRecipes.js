@@ -117,7 +117,7 @@ var allRecipes = {
     ingredients: [
       "1 head cauliflower, cut into 3/4-inch-wide florets",
       "1 1/4 lb potatoes, peeled and cut into 1/2-inch cubes",
-      "5 tbsp. olive oil"
+      "5 tbsp. olive oil",
       "1/2 tsp. cumin seeds",
       "3/4 tsp. salt",
       "1 medium onion, finely chopped",
