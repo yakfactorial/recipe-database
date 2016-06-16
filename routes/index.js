@@ -23,10 +23,6 @@ router.get('/recipe', (request, response, next) => {
   })
 })
 
-// res.send to convert to JSON
-// getRecipes('source') either db or file
-// switch(source){case: 'file' return getRecipeFromFile(); case: 'database' return getRecipeFromDatabase();}
-
 router.get('/recipe/broccoli-cheddar', (request, response) => {
   response.render('recipe', {
     name: recipes.broccoliCheddar.name,
@@ -79,19 +75,84 @@ router.get('/recipe/cacio-e-pepe-biscuits', (request, response) => {
   })
 });
 
-// router.get('/recipe/indian-cauliflower', (request, response) => {
-//   response.render('recipe', {
-//     name: recipes.indianCauliflower.name,
-//     servings: recipes.indianCauliflower.servings,
-//     cookTime: recipes.indianCauliflower.cookTime,
-//     ingredients: recipes.indianCauliflower.ingredients,
-//     directions: recipes.indianCauliflower.directions,
-//     source: recipes.indianCauliflower.source,
-//     tags: recipes.indianCauliflower.tags,
-//     home: '/',
-//   })
-// });
+router.get('/recipe/indian-cauliflower', (request, response) => {
+  response.render('recipe', {
+    name: recipes.indianCauliflower.name,
+    servings: recipes.indianCauliflower.servings,
+    cookTime: recipes.indianCauliflower.cookTime,
+    ingredients: recipes.indianCauliflower.ingredients,
+    directions: recipes.indianCauliflower.directions,
+    source: recipes.indianCauliflower.source,
+    tags: recipes.indianCauliflower.tags,
+    home: '/',
+  })
+});
 
-// gazpacho, mint juleps, enchiladas, crock pot stew, strawberry basil balsamic salad, southwest salad, strawberry rhubarb pie, old fashioneds, indian foods (cabbage dish and potato dish), kidney bean and chard pie, cabbage and portobello tacos, ramen, pear arugula and gorgonzola pizza
+router.get('/recipe/mint-julep', (request, response) => {
+  response.render('recipe', {
+    name: recipes.mintJulep.name,
+    servings: recipes.mintJulep.servings,
+    cookTime: recipes.mintJulep.cookTime,
+    ingredients: recipes.mintJulep.ingredients,
+    directions: recipes.mintJulep.directions,
+    source: recipes.mintJulep.source,
+    tags: recipes.mintJulep.tags,
+    home: '/',
+  })
+});
+
+router.get('/recipe/gazpacho', (request, response) => {
+  response.render('recipe', {
+    name: recipes.gazpacho.name,
+    servings: recipes.gazpacho.servings,
+    cookTime: recipes.gazpacho.cookTime,
+    ingredients: recipes.gazpacho.ingredients,
+    directions: recipes.gazpacho.directions,
+    source: recipes.gazpacho.source,
+    tags: recipes.gazpacho.tags,
+    home: '/',
+  })
+});
+
+router.get('/recipe/old-fashioned', (request, response) => {
+  response.render('recipe', {
+    name: recipes.oldFashioned.name,
+    servings: recipes.oldFashioned.servings,
+    cookTime: recipes.oldFashioned.cookTime,
+    ingredients: recipes.oldFashioned.ingredients,
+    directions: recipes.oldFashioned.directions,
+    source: recipes.oldFashioned.source,
+    tags: recipes.oldFashioned.tags,
+    home: '/',
+  })
+});
+
+router.get('/recipe/indian-lentils-cabbage', (request, response) => {
+  response.render('recipe', {
+    name: recipes.indianLentilsCabbage.name,
+    servings: recipes.indianLentilsCabbage.servings,
+    cookTime: recipes.indianLentilsCabbage.cookTime,
+    ingredients: recipes.indianLentilsCabbage.ingredients,
+    directions: recipes.indianLentilsCabbage.directions,
+    source: recipes.indianLentilsCabbage.source,
+    tags: recipes.indianLentilsCabbage.tags,
+    home: '/',
+  })
+});
+
+router.get('/recipe/bean-pot-pie', (request, response) => {
+  response.render('recipe', {
+    name: recipes.beanPotPie.name,
+    servings: recipes.beanPotPie.servings,
+    cookTime: recipes.beanPotPie.cookTime,
+    ingredients: recipes.beanPotPie.ingredients,
+    directions: recipes.beanPotPie.directions,
+    source: recipes.beanPotPie.source,
+    tags: recipes.beanPotPie.tags,
+    home: '/',
+  })
+});
+
+// enchiladas, crock pot stew, strawberry basil balsamic salad, southwest salad, strawberry rhubarb pie, cabbage and portobello tacos, ramen, pear arugula and gorgonzola pizza
 
 module.exports = router;

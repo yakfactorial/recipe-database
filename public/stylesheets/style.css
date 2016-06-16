@@ -6,3 +6,12 @@ body {
 a {
   color: #00B7FF;
 }
+
+.ingredients {
+  list-style-type: none;
+}
+
+.tags li {
+  display: inline-block;
+  margin: 2em;
+}

@@ -4,7 +4,7 @@
 <p>Cook Time: {{cookTime}}</p>
 
 <h3>Ingredients:</h3>
-<ul>
+<ul class="ingredients">
   {{#each ingredients}}
     <li>
       <input type="checkbox">{{this}}
@@ -23,12 +23,10 @@
 <a href="{{source}}">{{source}}</a>
 
 <h4>Tags:</h4>
-<ul>
+<ul class="tags">
   {{#each tags}}
     <li>"{{this}}"</li>
   {{/each}}
 </ul>
-
-<img src="{{images}}" alt="" />
 
 <a href="{{home}}">Home</a>
