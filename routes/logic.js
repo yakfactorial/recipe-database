@@ -5,16 +5,45 @@
 // function getRecipeFromFile(){};
 // function getRecipeFromDatabase(){};
 
-// function saveUserInput(){
-//   var searchResults = document.getElementById(submit).value;
-// };
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+// get element by id, prevent default on submit, store search in local data(?), traverse through recipe object tags and name (loop through tags)
+var $ = require('jQuery');
 
-var userInput = "";
+var tags = allRecipes[key].tags;
+var names = allRecipes[key].name;
 
-function getSearchResults(){
-  $.get( "ajax/test.html", function( data ) {
-  $( ".result" ).html( data );
-  alert( "Load was performed." );
+$(document).ready(function(){
+  getsearchResults();
+  findRecipeByName();
+  findRecipeByTags();
 });
+
+function getSearchResults(userInput){
+  $('#search_box').submit(function(event) {
+    event.preventDefault();
+    var userInput = $('#search_box').val();
+    $("body").append("YOU SEARCHED WOWEE");
+   localStorage.setItem('userInput', userInput);
+ });
+}
+
+function findRecipeByTags(){
+  for (key of allRecipes) {
+    for (var i=0; i<tags.length; i++){
+      if (userInput === tags[i]){
+        return allRecipes[key];
+      } else {
+          return "Your search didn't match any results. Check your spelling, or input 'full list' to search the old-fashioned way (with your eyes)."
+      }
+    }
+  }
+}
+
+function findRecipeByName(){
+  for (key of allRecipes) {
+    if (userInput === name){
+      return allRecipes[key];
+    } else {
+      return "Your search didn't match any results. Check your spelling, or input 'full list' to search the old-fashioned way (with your eyes)."
+    }
+  }
 }

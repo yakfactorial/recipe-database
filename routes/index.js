@@ -3,25 +3,41 @@ var router = express.Router();
 var fs = require('fs');
 var recipes = require('./allRecipes.js');
 var api = require('./api.js');
+require('./logic.js');
 
-/* GET home page. */
+// GET home page.
 router.get('/', (request, response, next) => {
   response.render('index', {
     title: "Recipe Database",
-    next: 'recipe/broccoli-cheddar',
+    next: 'recipe/list-all',
   })
 })
 
-router.get('/', function(error, request, response, next){
-  res.json(api(request, response))
+// GET api
+router.get('/', (error, request, response, next) => {
+  response.json(api(request, response))
 })
 
+// GET logic file
+router.get('/logic', (error, request, response, next) => {
+  response.json(api(request,response))
+})
+
+// GET recipe template page
 router.get('/recipe', (request, response, next) => {
   response.render('recipe', {
     title: "Recipe Database",
     next: 'recipe',
   })
 })
+
+// GET recipe objects from allRecipes object
+// router.get('/recipe/full-list', (request, response) => {
+//   response.render('full-list', {
+//     name: ,
+//     home: '/',
+//   })
+// });
 
 router.get('/recipe/broccoli-cheddar', (request, response) => {
   response.render('recipe', {
