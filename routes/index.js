@@ -4,6 +4,8 @@ var fs = require('fs');
 var recipes = require('./allRecipes.js');
 var api = require('./api.js');
 require('./logic.js');
+var knex = require('../db/knex');
+require('dotenv').load();
 
 // GET home page.
 router.get('/', (request, response, next) => {
@@ -30,14 +32,6 @@ router.get('/recipe', (request, response, next) => {
     next: 'recipe',
   })
 })
-
-// GET recipe objects from allRecipes object
-// router.get('/recipe/full-list', (request, response) => {
-//   response.render('full-list', {
-//     name: ,
-//     home: '/',
-//   })
-// });
 
 router.get('/recipe/broccoli-cheddar', (request, response) => {
   response.render('recipe', {
