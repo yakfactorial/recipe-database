@@ -2,7 +2,8 @@
 
 <h3>Full Recipe List:</h3>
 <ul>
-  {{#each}}
+  {{#each allRecipes[key]}}
+    <li>{{this.name}}</li>
   {{/each}}
 </ul>
 <hr>

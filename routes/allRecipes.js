@@ -1,5 +1,6 @@
-var allRecipes = {
-  broccoliCheddar : {
+var allRecipes = [
+  {
+  slug: "broccoliCheddar",
   name: "Broccoli Cheddar Soup",
   servings: "4 to 6",
   cookTime: "45 minutes, including prep",
@@ -32,10 +33,11 @@ var allRecipes = {
   source: "http://smittenkitchen.com/blog/2015/09/broccoli-cheddar-soup/",
   },
 
-  sangria: {
-    name: "",
-    servings: "",
-    cookTime: "",
+  {
+    slug: "sangria",
+    name: "Ginger-Cardamom Sangria",
+    servings: "8",
+    cookTime: "~2.5 hours",
     ingredients: [
       "1.5 oz/40g peeled ginger root (about one 4 1/2-inch knob)",
       "2 tablespoons water",
@@ -59,7 +61,8 @@ var allRecipes = {
     source: "http://www.seriouseats.com/recipes/2016/06/red-wine-sangria-ginger-cardamom-recipe.html",
   },
 
-  hollandaise: {
+  {
+    slug: "hollandaise",
     name: "Hollandaise Sauce",
     servings: "6",
     cookTime: "10 minutes",
@@ -81,7 +84,8 @@ var allRecipes = {
     source: "http://allrecipes.com/recipe/35995/classic-hollandaise-sauce/",
     },
 
-  biscuits: {
+  {
+    slug: "cacioBiscuits",
     name: "Cacio e Pepe Biscuits",
     servings: "12",
     cookTime: "30 minutes",
@@ -111,7 +115,8 @@ var allRecipes = {
     ],
     source: "http://food52.com/recipes/41421-cacio-e-pepe-biscuits",
   },
-  indianCauliflower: {
+  {
+    slug: "indianCauliflower",
     name: "Indian Spiced Cauliflower and Potatoes",
     servings: "4",
     cookTime: "50 minutes",
@@ -148,7 +153,8 @@ var allRecipes = {
     ],
     home: '/',
   },
-  mintJulep: {
+  {
+    slug: "mintJulep",
     name: "Mint Juleps",
     servings: "1",
     cookTime: "7 minutes",
@@ -171,7 +177,8 @@ var allRecipes = {
     home: '/',
   },
 
-  gazpacho: {
+  {
+    slug: "gazpacho",
     name: "Gazpacho",
     servings: "6",
     cookTime: "30 minutes",
@@ -206,7 +213,8 @@ var allRecipes = {
     home: '/',
   },
 
-  oldFashioned: {
+  {
+    slug: "oldFashioned",
     name: "Old Fashioned",
     servings: "1",
     cookTime: "5 minutes",
@@ -228,7 +236,8 @@ var allRecipes = {
     home: '/',
   },
 
-  indianLentilsCabbage: {
+  {
+    slug: "indianLentilsCabbage",
     name: "Indian Lentils and Cabbage",
     servings: "4 to 6",
     cookTime: "~2 hours",
@@ -263,7 +272,8 @@ var allRecipes = {
     home: '/',
   },
 
-  beanPotPie: {
+  {
+    slug: "beanPotPie",
     name: "Bean and Chard Pot Pie",
     servings: "",
     cookTime: "",
@@ -306,8 +316,7 @@ var allRecipes = {
     ],
     home: '/',
   },
-
-}
+]
 
 // emtpyRecipeObject: {
 //   name: "",

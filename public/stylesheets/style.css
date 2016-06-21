@@ -25,3 +25,8 @@ a {
   display: inline-block;
   margin: 2em;
 }
+
+#userInput {
+  font-size: 5em;
+  color: pink;
+}
