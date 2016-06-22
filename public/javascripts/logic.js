@@ -1,23 +1,27 @@
-var allRecipes =
- $.get('/allRecipes', function(data){
-  return data;
-});
-
-var userInput = () => $('#search_box').val();
-
 $(document).ready(() => {
-  getSearchResults(userInput);
+  addEventListeners()
 });
 
-function getSearchResults(userInput){
-  $('#search_box').submit((event) => {
-    event.preventDefault();
-    recursiveSearch();
-    console.log('your results went through');
- });
+function addEventListeners(){
+  $('form').submit((event) => {
+  event.preventDefault();
+  var userInput = $('#search_box').val();
+  $.get('allRecipes', (data) => {
+      filterRecipes(userInput, data);
+      return data;
+    })
+  })
+}
+
+function filterRecipes(userInput, allRecipes){
+  allRecipes.filter(function(recipe){
+    var searchResults = recursiveSearch(recipe, userInput);
+    return searchResults;
+  })
 }
 
 function recursiveSearch (obj, searchString){
+
   if (typeof obj === "string"){
     return -1 !== obj.search(searchString)
   } else if (typeof obj === "number"){
@@ -41,6 +45,6 @@ function recursiveSearch (obj, searchString){
   }
 }
 
-console.log(allRecipes.filter(function (recipe) {
-  return recursiveSearch(recipe, "cheese")
-}))
+// console.log(allRecipes.filter(function (recipe) {
+//   return recursiveSearch(recipe, "cheese")
+// }))
